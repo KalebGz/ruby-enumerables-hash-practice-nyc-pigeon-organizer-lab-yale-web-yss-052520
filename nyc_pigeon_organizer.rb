@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
     
     value.each{|inner_key, names|
       names.each{ |name|
-        if !final_array[name]
+        if !final_hash[name]
           final_hash[name] = {}
         end
         if !final_hash[name][key]
